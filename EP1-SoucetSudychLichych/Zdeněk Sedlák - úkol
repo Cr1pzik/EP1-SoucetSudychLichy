@@ -1,0 +1,25 @@
+Imports System
+
+Module Module1
+  Sub Main()
+    Dim pocetCisel As Integer
+    Dim cisla(pocetcisel - 1) As Integer
+
+    Console.WriteLine("Zadejte počet čísel, které chcete zadat:")
+    pocetCisel = Integer.Parse(Console.ReadLine())
+
+    For i As Integer = 0 To pocetCisel - 1
+       Console.Writeline("Zadejte číslo{0}:", i + 1)
+       cisla(i) = Integer.Parse(Console.ReadLine())
+    Next
+  Console.Writeline("Zadaná čísla jsou:")
+
+  For Each cislo As Integer in cisla
+      Console.Writeline(cislo)
+  Next
+  Console.Writeline("Stiskněte libovolnou klávesu pro ukončení programu.")
+  Console.Readkey()
+
+  End Sub
+
+End Module
